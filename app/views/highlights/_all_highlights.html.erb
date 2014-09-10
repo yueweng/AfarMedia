@@ -1,0 +1,9 @@
+<% @highlights.each do |hl| %>
+  <%= link_to highlight_path(hl) do %>
+    <div class="highlight">
+      Title: <%= hl.title %>
+      </br>
+      Description:<%= hl.description %>
+    </div>
+  <% end %>
+<% end %>
